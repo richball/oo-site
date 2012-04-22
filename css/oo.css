@@ -43,6 +43,7 @@ body {
 }
 .responsive-indicator {
   text-align: center;
+  cursor: pointer;
 }
 .page-header {
   padding-bottom: 17px;
