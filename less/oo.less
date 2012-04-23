@@ -17,10 +17,16 @@ body {
   background-color: transparent;  
 }
 
+
+.logo {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 // Phones only
 @media (max-width: 767px) {
-  .hero-unit {
-    padding: 20px 10px 10px 10px;
+  .hero-unit { 
+    padding: 20px 20px 10px 10px;
     background-repeat:no-repeat;
     background-color: transparent;  
 
@@ -30,6 +36,10 @@ body {
       line-height: @baseLineHeight;
     }
   }  
+
+  .logo {
+    padding-bottom: 10px;
+  }
 }
 
 // Tablets & small desktops only
@@ -79,7 +89,11 @@ h1 {
   color: @ooBlue;
 }
 
-.logo {
-  text-align: center;
-  padding-bottom: 20px;
+.more {
+  background-color: gray;
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;  
 }

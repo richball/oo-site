@@ -30,9 +30,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
 
-
   </head>
 
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   <body bgcolor="black" data-spy="scroll" data-target=".navbar">
 
     <div class="navbar navbar-fixed-top">
@@ -65,13 +65,14 @@
             <div class="logo">
               <img src="img/oo-rings.png">
             </div>
-            <p>Object Ovation is a software technology consulting firm specializing in the analysis, design, development, and integration of components that comprise today's distributed Java &amp; J2EE e-business backbone.
-            </p>
             <p>
+              Object Ovation is a software technology consulting firm specializing in the analysis, design, development, and integration of components that comprise today's distributed Java &amp; J2EE e-business backbone. <span class="more"> &bull; &bull; &bull; </span>
+            </p>
+            <p class="hidden-phone">
               Object Ovation was formed out of the desire for extremely productive design and development. Technical ability, quality, efficiency, and productive work is a must. At Object Ovation we recognize the impact of synergistic teams. We feel strongly that team dynamics plays one of the most important roles in determining the success of projects.
             </p>
 
-            <p>
+            <p class="hidden-phone">
               Our seasoned employees pride themselves on working well with developers, analysts, and users. We are accustomed to working in environments where schedules are highly aggressive, where development teams must be stream-lined and extremely efficient, and where leadership qualities produce innovative architectural components.
             </p>
 
@@ -188,8 +189,16 @@
         </div>
       </a>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="vendor/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".more").click(function() {
+          $(".hidden-phone").removeClass("hidden-phone");
+          $(".more").remove();
+        });
+      });
+    </script>
 
   </body>
 </html>
